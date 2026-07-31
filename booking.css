@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e8f5ff;
+    color: #1a1a1a;
+}
+
+.topbar {
+    background-color: #072041;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.topbar h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.topbar p {
+    font-size: 16px;
+    color: #d6e8ff;
+}
+
+.booking-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.booking-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #d3d3d3;
+}
+
+.booking-card h2 {
+    margin-bottom: 10px;
+    color: #072041;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #19375F;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0077cc;
+}
+
+.full-width {
+    margin-bottom: 20px;
+}
+
+.book-btn {
+    width: 100%;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.book-btn:hover {
+    background-color: #005fa3;
+}
+
+

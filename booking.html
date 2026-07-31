@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroBook | Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+
+    <header class="topbar">
+        <h1>AeroBook</h1>
+        <p>Complete your flight booking</p>
+    </header>
+
+    <main class="booking-page">
+        <section class="booking-card">
+            <h2>Passenger Details</h2>
+            <p class="subtitle">Fill in your details carefully to confirm your ticket.</p>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Mobile Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <select id="passengers" required>
+                            <option>1 Passenger</option>
+                            <option>2 Passengers</option>
+                            <option>3 Passengers</option>
+                            <option>4 Passengers</option>
+                            <option>5 Passengers</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Flight Details</h2>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from">From</label>
+                        <input type="text" id="from" placeholder="Departure city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="to">To</label>
+                        <input type="text" id="to" placeholder="Destination city" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="depart-date">Departure Date</label>
+                        <input type="date" id="depart-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="return-date">Return Date</label>
+                        <input type="date" id="return-date">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <select id="class" required>
+                            <option>Economy</option>
+                            <option>Premium Economy</option>
+                            <option>Business</option>
+                            <option>First Class</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="baggage">Baggage</label>
+                        <select id="baggage" required>
+                            <option>Carry-on only</option>
+                            <option>1 Checked Bag</option>
+                            <option>2 Checked Bags</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="notes">Special Requests</label>
+                    <textarea id="notes" rows="4" placeholder="Seat preference, meal request, or any other note"></textarea>
+                </div>
+
+                <button type="submit" class="book-btn">Confirm Flight</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

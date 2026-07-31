@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="FlightData.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>AeroBook | Flight Booking</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-plane"></i>
+                <h2>AeroBook</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flight.html">Flights</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The best flight offers from anywhere, to everywhere</h1>
+        </div>
+        <div class="hero-search">
+    <h2>Search Flights</h2>
+    <form class="search-form">
+        <div class="form-group">
+            <label>From</label>
+            <input type="text" id="searchFrom" placeholder="Departure City">
+        </div>
+
+        <div class="form-group">
+            <label>To</label>
+            <input type="text" id="searchTo" placeholder="Destination City">
+        </div>
+
+        <div class="form-group">
+            <label>Departure Date</label>
+            <input type="date" id="searchDate">
+        </div>
+
+        <div class="form-group">
+            <label>Return Date</label>
+            <input type="date" id="returnDate">
+        </div>
+
+        <div class="form-group">
+            <label>Passengers</label>
+            <select id="searchPassengers">
+                <option>1 Passenger</option>
+                <option>2 Passengers</option>
+                <option>3 Passengers</option>
+                <option>4 Passengers</option>
+                <option>5 Passengers</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Class</label>
+            <select id="searchClass">
+                <option>Economy</option>
+                <option>Premium Economy</option>
+                <option>Business</option>
+                <option>First Class</option>
+            </select>
+        </div>
+
+        <button type="submit" class="search-btn">Search Flights</button>
+    </form>
+</div>
+    </section>
+
+    <section class="chracter">
+        <ul class="heading">
+            <li id="a">The best flight deals</li>
+            <li id="b">Flexible ways to pay, makes booking easier</li>
+            <li id="c">Support that never sleeps, we're with you 24/7</li>
+        </ul>
+
+    </section>
+            
+
+    <section class="destinations">
+        <h2>Top searched destinations from New Delhi</h2>
+        <div class="destination-container">
+
+            <div class="card" onclick="goToCity('Hyderabad')">
+                <img src="hyderabad.png" alt="Hyderabad">
+                <h3>Hyderabad</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('Mumbai')">
+                <img src="Mumbai.jpg" alt="Mumbai">
+                <h3>Mumbai</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('Goa')">
+                <img src="goa.jpg" alt="Goa">
+                <h3>Goa</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('Bangalore')">
+                <img src="Bangalore.jpg" alt="Bangalore">
+                <h3>Bangalore</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('Dubai')">
+                <img src="Dubai.jpg" alt="Dubai, UAE">
+                <h3>Dubai, UAE</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('Singapore')">
+                <img src="Singapore.jpg" alt="Singapore">
+                <h3>Singapore</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('France')">
+                <img src="France.jpg" alt="Paris, France">
+                <h3>Paris, France</h3>
+            </div>
+
+            <div class="card" onclick="goToCity('London')">
+                <img src="London.jpg" alt="London, UK">
+                <h3>London, UK</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="offers">
+
+    <h2>Special Offers</h2>
+
+    <div class="offer-container">
+        <div class="offer-card">
+            <span class="offer-tag">Limited Time</span>
+            <h3>30% OFF on Domestic Flights</h3>
+            <p>
+                Book your domestic flight today and save up to
+                30% on selected routes across India.
+            </p>
+            <a href="booking.html">
+                <button type="button">Book Now</button>
+            </a>
+        </div>
+
+        <div class="offer-card">
+            <span class="offer-tag">International</span>
+            <h3>Exclusive International Deals</h3>
+            <p>
+                Fly to Dubai, Singapore, London, Paris and many
+                more destinations at exciting prices.
+            </p>
+            <a href="flight.html">
+                <button type="button">Explore Deals</button>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+        <h2 id="about-heading">About AeroBook</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    AeroBook is your trusted partner for easy and affordable flight booking. 
+                    We specialize in connecting travelers with the best domestic and international 
+                    flight deals across the globe.
+                </p>
+                <p>
+                    Founded with a mission to make air travel accessible to everyone, AeroBook 
+                    offers a seamless booking experience with flexible payment options and 
+                    24/7 customer support. Whether you're traveling for business or leisure, 
+                    we ensure you get the best prices and most comfortable flights.
+                </p>
+                <p>
+                    Our platform features flights to over 100 destinations worldwide, including 
+                    popular routes from New Delhi to Hyderabad, Mumbai, Goa, Bangalore, Dubai, 
+                    Singapore, Paris, London, and many more.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>100+</h3>
+                    <p>Destinations</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>50K+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (NEW) -->
+    <section id="contact" class="contact">
+        <h2 id="contact-heading">Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Have questions or need assistance? We're here to help you 24/7.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Thānesar, Haryana, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@aerobook.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 88888 88888</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3>Send us a Message</h3>
+                <form class="contact-form" action="#" method="POST" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Enter your name" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Enter your email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="What is this about?" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+
+            <h2>AeroBook</h2>
+            <p>
+                Your trusted partner for easy and affordable flight booking.
+                Book domestic and international flights with comfort and confidence.
+            </p>
+
+            <p class="copyright">
+                © 2026 AeroBook. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
