@@ -1,30 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+.navbar{
+    background-color: #19375F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
 }
 
-body {
-    background-color: #e8f5ff;
-    color: #1a1a1a;
+.logo{
+    display: flex;
+    align-items: center;
 }
 
-.topbar {
-    background-color: #072041;
-    color: white;
-    text-align: center;
-    padding: 25px 20px;
+.logo h2{
+    font-size: 25px;
+    margin-left: 10px;
+    color: #afdeff;
 }
 
-.topbar h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
+.nav-links{
+    display: flex;
+    list-style: none;
 }
 
-.topbar p {
-    font-size: 16px;
-    color: #d6e8ff;
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    color: #54b8ff;
 }
 
 .booking-page {
