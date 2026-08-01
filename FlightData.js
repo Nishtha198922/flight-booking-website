@@ -162,7 +162,548 @@ var allFlights = [
     { id: 319, airline: "Singapore Airlines", from: "Mumbai", to: "Singapore", price: 115000, class: "First Class" },
 
     { id: 320, airline: "British Airways", from: "Mumbai", to: "London", price: 150000, class: "First Class" },
-    { id: 321, airline: "Air France", from: "Mumbai", to: "Paris", price: 145000, class: "First Class" }
+    { id: 321, airline: "Air France", from: "Mumbai", to: "Paris", price: 145000, class: "First Class" },
+
+    // ---------- PREMIUM ECONOMY ----------
+    { id: 401, airline: "Air India", from: "New Delhi", to: "Jaipur", price: 4200, class: "Premium Economy" },
+    { id: 402, airline: "IndiGo", from: "New Delhi", to: "Jaipur", price: 4000, class: "Premium Economy" },
+    { id: 403, airline: "Vistara", from: "New Delhi", to: "Jaipur", price: 4300, class: "Premium Economy" },
+
+{ id: 404, airline: "Air India", from: "New Delhi", to: "Chandigarh", price: 3800, class: "Premium Economy" },
+{ id: 405, airline: "IndiGo", from: "New Delhi", to: "Chandigarh", price: 3600, class: "Premium Economy" },
+{ id: 406, airline: "SpiceJet", from: "New Delhi", to: "Chandigarh", price: 3700, class: "Premium Economy" },
+
+{ id: 407, airline: "Air India", from: "New Delhi", to: "Lucknow", price: 4100, class: "Premium Economy" },
+{ id: 408, airline: "IndiGo", from: "New Delhi", to: "Lucknow", price: 3900, class: "Premium Economy" },
+
+{ id: 409, airline: "Air India", from: "New Delhi", to: "Amritsar", price: 4300, class: "Premium Economy" },
+{ id: 410, airline: "IndiGo", from: "New Delhi", to: "Amritsar", price: 4100, class: "Premium Economy" },
+{ id: 411, airline: "SpiceJet", from: "New Delhi", to: "Amritsar", price: 4200, class: "Premium Economy" },
+
+{ id: 412, airline: "Air India", from: "New Delhi", to: "Kolkata", price: 5800, class: "Premium Economy" },
+{ id: 413, airline: "IndiGo", from: "New Delhi", to: "Kolkata", price: 5600, class: "Premium Economy" },
+{ id: 414, airline: "Vistara", from: "New Delhi", to: "Kolkata", price: 5900, class: "Premium Economy" },
+
+{ id: 415, airline: "Air India", from: "New Delhi", to: "Chennai", price: 6800, class: "Premium Economy" },
+{ id: 416, airline: "IndiGo", from: "New Delhi", to: "Chennai", price: 6600, class: "Premium Economy" },
+{ id: 417, airline: "Vistara", from: "New Delhi", to: "Chennai", price: 6900, class: "Premium Economy" },
+
+{ id: 418, airline: "Air India", from: "New Delhi", to: "Ahmedabad", price: 5200, class: "Premium Economy" },
+{ id: 419, airline: "IndiGo", from: "New Delhi", to: "Ahmedabad", price: 5000, class: "Premium Economy" },
+{ id: 420, airline: "SpiceJet", from: "New Delhi", to: "Ahmedabad", price: 5100, class: "Premium Economy" },
+
+{ id: 421, airline: "Air India", from: "New Delhi", to: "Pune", price: 5900, class: "Premium Economy" },
+{ id: 422, airline: "IndiGo", from: "New Delhi", to: "Pune", price: 5700, class: "Premium Economy" },
+{ id: 423, airline: "Vistara", from: "New Delhi", to: "Pune", price: 6000, class: "Premium Economy" },
+
+{ id: 424, airline: "Air India", from: "Mumbai", to: "Jaipur", price: 4500, class: "Premium Economy" },
+{ id: 425, airline: "IndiGo", from: "Mumbai", to: "Jaipur", price: 4300, class: "Premium Economy" },
+
+{ id: 426, airline: "Air India", from: "Mumbai", to: "Chandigarh", price: 4900, class: "Premium Economy" },
+{ id: 427, airline: "IndiGo", from: "Mumbai", to: "Chandigarh", price: 4700, class: "Premium Economy" },
+
+{ id: 428, airline: "Air India", from: "Mumbai", to: "Kolkata", price: 6200, class: "Premium Economy" },
+{ id: 429, airline: "IndiGo", from: "Mumbai", to: "Kolkata", price: 6000, class: "Premium Economy" },
+{ id: 430, airline: "Vistara", from: "Mumbai", to: "Kolkata", price: 6300, class: "Premium Economy" },
+
+{ id: 431, airline: "Air India", from: "Mumbai", to: "Chennai", price: 7200, class: "Premium Economy" },
+{ id: 432, airline: "IndiGo", from: "Mumbai", to: "Chennai", price: 7000, class: "Premium Economy" },
+
+{ id: 433, airline: "Air India", from: "Mumbai", to: "Ahmedabad", price: 4200, class: "Premium Economy" },
+{ id: 434, airline: "IndiGo", from: "Mumbai", to: "Ahmedabad", price: 4000, class: "Premium Economy" },
+
+{ id: 435, airline: "Air India", from: "Mumbai", to: "Pune", price: 3500, class: "Premium Economy" },
+{ id: 436, airline: "IndiGo", from: "Mumbai", to: "Pune", price: 3300, class: "Premium Economy" },
+
+{ id: 437, airline: "Air India", from: "Bangalore", to: "Mumbai", price: 5100, class: "Premium Economy" },
+{ id: 438, airline: "IndiGo", from: "Bangalore", to: "Mumbai", price: 4900, class: "Premium Economy" },
+{ id: 439, airline: "Vistara", from: "Bangalore", to: "Mumbai", price: 5200, class: "Premium Economy" },
+
+{ id: 440, airline: "Air India", from: "Bangalore", to: "New Delhi", price: 7300, class: "Premium Economy" },
+{ id: 441, airline: "IndiGo", from: "Bangalore", to: "New Delhi", price: 7100, class: "Premium Economy" },
+
+{ id: 442, airline: "Air India", from: "Bangalore", to: "Kolkata", price: 6400, class: "Premium Economy" },
+{ id: 443, airline: "IndiGo", from: "Bangalore", to: "Kolkata", price: 6200, class: "Premium Economy" },
+
+{ id: 444, airline: "Air India", from: "Bangalore", to: "Chennai", price: 3200, class: "Premium Economy" },
+{ id: 445, airline: "IndiGo", from: "Bangalore", to: "Chennai", price: 3000, class: "Premium Economy" },
+
+{ id: 446, airline: "Air India", from: "Bangalore", to: "Hyderabad", price: 3600, class: "Premium Economy" },
+{ id: 447, airline: "IndiGo", from: "Bangalore", to: "Hyderabad", price: 3400, class: "Premium Economy" },
+
+{ id: 448, airline: "Emirates", from: "Mumbai", to: "Dubai", price: 27000, class: "Premium Economy" },
+{ id: 449, airline: "Air India", from: "Mumbai", to: "Dubai", price: 26000, class: "Premium Economy" },
+
+{ id: 450, airline: "Singapore Airlines", from: "Mumbai", to: "Singapore", price: 47000, class: "Premium Economy" },
+{ id: 451, airline: "Scoot", from: "Mumbai", to: "Singapore", price: 39000, class: "Premium Economy" },
+
+{ id: 452, airline: "British Airways", from: "Mumbai", to: "London", price: 57000, class: "Premium Economy" },
+{ id: 453, airline: "Virgin Atlantic", from: "Mumbai", to: "London", price: 58000, class: "Premium Economy" },
+
+{ id: 454, airline: "Air France", from: "Mumbai", to: "Paris", price: 55000, class: "Premium Economy" },
+{ id: 455, airline: "Lufthansa", from: "Mumbai", to: "Paris", price: 54000, class: "Premium Economy" },
+
+{ id: 456, airline: "Emirates", from: "Bangalore", to: "Dubai", price: 28000, class: "Premium Economy" },
+{ id: 457, airline: "Singapore Airlines", from: "Bangalore", to: "Singapore", price: 48000, class: "Premium Economy" },
+
+{ id: 458, airline: "British Airways", from: "Kolkata", to: "London", price: 59000, class: "Premium Economy" },
+{ id: 459, airline: "Air India", from: "Kolkata", to: "Dubai", price: 26000, class: "Premium Economy" },
+
+{ id: 460, airline: "Thai Airways", from: "New Delhi", to: "Bangkok", price: 32000, class: "Premium Economy" },
+{ id: 461, airline: "IndiGo", from: "New Delhi", to: "Bangkok", price: 30000, class: "Premium Economy" },
+
+{ id: 462, airline: "Malaysia Airlines", from: "New Delhi", to: "Kuala Lumpur", price: 34000, class: "Premium Economy" },
+{ id: 463, airline: "Air India", from: "New Delhi", to: "Kuala Lumpur", price: 35000, class: "Premium Economy" },
+
+{ id: 464, airline: "Qatar Airways", from: "New Delhi", to: "Doha", price: 29000, class: "Premium Economy" },
+{ id: 465, airline: "IndiGo", from: "New Delhi", to: "Doha", price: 27000, class: "Premium Economy" },
+
+// ---------- BUSINESS ----------
+{ id: 501, airline: "Air India", from: "New Delhi", to: "Jaipur", price: 6500, class: "Business" },
+{ id: 502, airline: "IndiGo", from: "New Delhi", to: "Jaipur", price: 6300, class: "Business" },
+{ id: 503, airline: "Vistara", from: "New Delhi", to: "Jaipur", price: 6600, class: "Business" },
+
+{ id: 504, airline: "Air India", from: "New Delhi", to: "Chandigarh", price: 6000, class: "Business" },
+{ id: 505, airline: "IndiGo", from: "New Delhi", to: "Chandigarh", price: 5800, class: "Business" },
+
+{ id: 506, airline: "Air India", from: "New Delhi", to: "Lucknow", price: 6400, class: "Business" },
+{ id: 507, airline: "IndiGo", from: "New Delhi", to: "Lucknow", price: 6200, class: "Business" },
+
+{ id: 508, airline: "Air India", from: "New Delhi", to: "Amritsar", price: 6700, class: "Business" },
+{ id: 509, airline: "IndiGo", from: "New Delhi", to: "Amritsar", price: 6500, class: "Business" },
+
+{ id: 510, airline: "Air India", from: "New Delhi", to: "Kolkata", price: 9000, class: "Business" },
+{ id: 511, airline: "IndiGo", from: "New Delhi", to: "Kolkata", price: 8800, class: "Business" },
+{ id: 512, airline: "Vistara", from: "New Delhi", to: "Kolkata", price: 9200, class: "Business" },
+
+{ id: 513, airline: "Air India", from: "New Delhi", to: "Chennai", price: 10500, class: "Business" },
+{ id: 514, airline: "IndiGo", from: "New Delhi", to: "Chennai", price: 10300, class: "Business" },
+{ id: 515, airline: "Vistara", from: "New Delhi", to: "Chennai", price: 10700, class: "Business" },
+
+{ id: 516, airline: "Air India", from: "New Delhi", to: "Ahmedabad", price: 8000, class: "Business" },
+{ id: 517, airline: "IndiGo", from: "New Delhi", to: "Ahmedabad", price: 7800, class: "Business" },
+
+{ id: 518, airline: "Air India", from: "New Delhi", to: "Pune", price: 9200, class: "Business" },
+{ id: 519, airline: "IndiGo", from: "New Delhi", to: "Pune", price: 9000, class: "Business" },
+{ id: 520, airline: "Vistara", from: "New Delhi", to: "Pune", price: 9300, class: "Business" },
+
+{ id: 521, airline: "Air India", from: "Mumbai", to: "Jaipur", price: 6800, class: "Business" },
+{ id: 522, airline: "IndiGo", from: "Mumbai", to: "Jaipur", price: 6600, class: "Business" },
+
+{ id: 523, airline: "Air India", from: "Mumbai", to: "Chandigarh", price: 7200, class: "Business" },
+{ id: 524, airline: "IndiGo", from: "Mumbai", to: "Chandigarh", price: 7000, class: "Business" },
+
+{ id: 525, airline: "Air India", from: "Mumbai", to: "Kolkata", price: 9500, class: "Business" },
+{ id: 526, airline: "IndiGo", from: "Mumbai", to: "Kolkata", price: 9300, class: "Business" },
+{ id: 527, airline: "Vistara", from: "Mumbai", to: "Kolkata", price: 9600, class: "Business" },
+
+{ id: 528, airline: "Air India", from: "Mumbai", to: "Chennai", price: 11000, class: "Business" },
+{ id: 529, airline: "IndiGo", from: "Mumbai", to: "Chennai", price: 10800, class: "Business" },
+
+{ id: 530, airline: "Air India", from: "Mumbai", to: "Ahmedabad", price: 6500, class: "Business" },
+{ id: 531, airline: "IndiGo", from: "Mumbai", to: "Ahmedabad", price: 6300, class: "Business" },
+
+{ id: 532, airline: "Air India", from: "Mumbai", to: "Pune", price: 5500, class: "Business" },
+{ id: 533, airline: "IndiGo", from: "Mumbai", to: "Pune", price: 5300, class: "Business" },
+
+{ id: 534, airline: "Air India", from: "Bangalore", to: "Mumbai", price: 7800, class: "Business" },
+{ id: 535, airline: "IndiGo", from: "Bangalore", to: "Mumbai", price: 7600, class: "Business" },
+{ id: 536, airline: "Vistara", from: "Bangalore", to: "Mumbai", price: 7900, class: "Business" },
+
+{ id: 537, airline: "Air India", from: "Bangalore", to: "New Delhi", price: 11000, class: "Business" },
+{ id: 538, airline: "IndiGo", from: "Bangalore", to: "New Delhi", price: 10800, class: "Business" },
+
+{ id: 539, airline: "Air India", from: "Bangalore", to: "Kolkata", price: 9800, class: "Business" },
+{ id: 540, airline: "IndiGo", from: "Bangalore", to: "Kolkata", price: 9600, class: "Business" },
+
+{ id: 541, airline: "Air India", from: "Bangalore", to: "Chennai", price: 5000, class: "Business" },
+{ id: 542, airline: "IndiGo", from: "Bangalore", to: "Chennai", price: 4800, class: "Business" },
+
+{ id: 543, airline: "Air India", from: "Bangalore", to: "Hyderabad", price: 5600, class: "Business" },
+{ id: 544, airline: "IndiGo", from: "Bangalore", to: "Hyderabad", price: 5400, class: "Business" },
+
+{ id: 545, airline: "Emirates", from: "Mumbai", to: "Dubai", price: 42000, class: "Business" },
+{ id: 546, airline: "Air India", from: "Mumbai", to: "Dubai", price: 40000, class: "Business" },
+
+{ id: 547, airline: "Singapore Airlines", from: "Mumbai", to: "Singapore", price: 74000, class: "Business" },
+{ id: 548, airline: "Scoot", from: "Mumbai", to: "Singapore", price: 63000, class: "Business" },
+
+{ id: 549, airline: "British Airways", from: "Mumbai", to: "London", price: 91000, class: "Business" },
+{ id: 550, airline: "Virgin Atlantic", from: "Mumbai", to: "London", price: 93000, class: "Business" },
+
+{ id: 551, airline: "Air France", from: "Mumbai", to: "Paris", price: 88000, class: "Business" },
+{ id: 552, airline: "Lufthansa", from: "Mumbai", to: "Paris", price: 86000, class: "Business" },
+
+{ id: 553, airline: "Emirates", from: "Bangalore", to: "Dubai", price: 43000, class: "Business" },
+{ id: 554, airline: "Singapore Airlines", from: "Bangalore", to: "Singapore", price: 75000, class: "Business" },
+
+{ id: 555, airline: "British Airways", from: "Kolkata", to: "London", price: 94000, class: "Business" },
+{ id: 556, airline: "Air India", from: "Kolkata", to: "Dubai", price: 41000, class: "Business" },
+
+{ id: 557, airline: "Thai Airways", from: "New Delhi", to: "Bangkok", price: 52000, class: "Business" },
+{ id: 558, airline: "IndiGo", from: "New Delhi", to: "Bangkok", price: 49000, class: "Business" },
+
+{ id: 559, airline: "Malaysia Airlines", from: "New Delhi", to: "Kuala Lumpur", price: 56000, class: "Business" },
+{ id: 560, airline: "Air India", from: "New Delhi", to: "Kuala Lumpur", price: 57000, class: "Business" },
+
+{ id: 561, airline: "Qatar Airways", from: "New Delhi", to: "Doha", price: 48000, class: "Business" },
+{ id: 562, airline: "IndiGo", from: "New Delhi", to: "Doha", price: 45000, class: "Business" },
+
+{ id: 563, airline: "Emirates", from: "New Delhi", to: "New York", price: 120000, class: "Business" },
+{ id: 564, airline: "Air India", from: "New Delhi", to: "New York", price: 115000, class: "Business" },
+
+{ id: 565, airline: "Lufthansa", from: "New Delhi", to: "Frankfurt", price: 95000, class: "Business" },
+{ id: 566, airline: "Air India", from: "New Delhi", to: "Frankfurt", price: 93000, class: "Business" },
+
+{ id: 567, airline: "Japanese Airlines", from: "New Delhi", to: "Tokyo", price: 105000, class: "Business" },
+{ id: 568, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 110000, class: "Business" },
+
+// ---------- FIRST CLASS ----------
+{ id: 601, airline: "Air India", from: "New Delhi", to: "Mumbai", price: 15500, class: "First Class" },
+{ id: 602, airline: "Vistara", from: "New Delhi", to: "Mumbai", price: 16000, class: "First Class" },
+
+{ id: 603, airline: "Air India", from: "New Delhi", to: "Bangalore", price: 17500, class: "First Class" },
+{ id: 604, airline: "Vistara", from: "New Delhi", to: "Bangalore", price: 18000, class: "First Class" },
+
+{ id: 605, airline: "Air India", from: "New Delhi", to: "Kolkata", price: 14000, class: "First Class" },
+{ id: 606, airline: "Vistara", from: "New Delhi", to: "Kolkata", price: 14500, class: "First Class" },
+
+{ id: 607, airline: "Air India", from: "New Delhi", to: "Chennai", price: 16500, class: "First Class" },
+{ id: 608, airline: "Vistara", from: "New Delhi", to: "Chennai", price: 17000, class: "First Class" },
+
+{ id: 609, airline: "Air India", from: "New Delhi", to: "Ahmedabad", price: 12500, class: "First Class" },
+{ id: 610, airline: "Vistara", from: "New Delhi", to: "Ahmedabad", price: 13000, class: "First Class" },
+
+{ id: 611, airline: "Air India", from: "New Delhi", to: "Pune", price: 14500, class: "First Class" },
+{ id: 612, airline: "Vistara", from: "New Delhi", to: "Pune", price: 15000, class: "First Class" },
+
+{ id: 613, airline: "Air India", from: "Mumbai", to: "New Delhi", price: 15800, class: "First Class" },
+{ id: 614, airline: "Vistara", from: "Mumbai", to: "New Delhi", price: 16200, class: "First Class" },
+
+{ id: 615, airline: "Air India", from: "Mumbai", to: "Bangalore", price: 17200, class: "First Class" },
+{ id: 616, airline: "Vistara", from: "Mumbai", to: "Bangalore", price: 17600, class: "First Class" },
+
+{ id: 617, airline: "Air India", from: "Mumbai", to: "Kolkata", price: 14200, class: "First Class" },
+{ id: 618, airline: "Vistara", from: "Mumbai", to: "Kolkata", price: 14600, class: "First Class" },
+
+{ id: 619, airline: "Air India", from: "Mumbai", to: "Chennai", price: 16800, class: "First Class" },
+{ id: 620, airline: "Vistara", from: "Mumbai", to: "Chennai", price: 17200, class: "First Class" },
+
+{ id: 621, airline: "Air India", from: "Bangalore", to: "New Delhi", price: 17800, class: "First Class" },
+{ id: 622, airline: "Vistara", from: "Bangalore", to: "New Delhi", price: 18200, class: "First Class" },
+
+{ id: 623, airline: "Air India", from: "Bangalore", to: "Mumbai", price: 16000, class: "First Class" },
+{ id: 624, airline: "Vistara", from: "Bangalore", to: "Mumbai", price: 16400, class: "First Class" },
+
+{ id: 625, airline: "Emirates", from: "New Delhi", to: "Dubai", price: 62000, class: "First Class" },
+{ id: 626, airline: "Air India", from: "New Delhi", to: "Dubai", price: 60000, class: "First Class" },
+
+{ id: 627, airline: "Emirates", from: "Mumbai", to: "Dubai", price: 63000, class: "First Class" },
+{ id: 628, airline: "Air India", from: "Mumbai", to: "Dubai", price: 61000, class: "First Class" },
+
+{ id: 629, airline: "Singapore Airlines", from: "New Delhi", to: "Singapore", price: 115000, class: "First Class" },
+{ id: 630, airline: "Singapore Airlines", from: "Mumbai", to: "Singapore", price: 118000, class: "First Class" },
+
+{ id: 631, airline: "British Airways", from: "New Delhi", to: "London", price: 150000, class: "First Class" },
+{ id: 632, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 152000, class: "First Class" },
+
+{ id: 633, airline: "British Airways", from: "Mumbai", to: "London", price: 153000, class: "First Class" },
+{ id: 634, airline: "Virgin Atlantic", from: "Mumbai", to: "London", price: 155000, class: "First Class" },
+
+{ id: 635, airline: "Air France", from: "New Delhi", to: "Paris", price: 145000, class: "First Class" },
+{ id: 636, airline: "Lufthansa", from: "New Delhi", to: "Paris", price: 143000, class: "First Class" },
+
+{ id: 637, airline: "Air France", from: "Mumbai", to: "Paris", price: 148000, class: "First Class" },
+{ id: 638, airline: "Lufthansa", from: "Mumbai", to: "Paris", price: 146000, class: "First Class" },
+
+{ id: 639, airline: "Emirates", from: "New Delhi", to: "New York", price: 190000, class: "First Class" },
+{ id: 640, airline: "Air India", from: "New Delhi", to: "New York", price: 185000, class: "First Class" },
+
+{ id: 641, airline: "Emirates", from: "Mumbai", to: "New York", price: 195000, class: "First Class" },
+
+{ id: 642, airline: "Lufthansa", from: "New Delhi", to: "Frankfurt", price: 160000, class: "First Class" },
+{ id: 643, airline: "Air India", from: "New Delhi", to: "Frankfurt", price: 158000, class: "First Class" },
+
+{ id: 644, airline: "Japanese Airlines", from: "New Delhi", to: "Tokyo", price: 175000, class: "First Class" },
+{ id: 645, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 180000, class: "First Class" },
+
+{ id: 646, airline: "Thai Airways", from: "New Delhi", to: "Bangkok", price: 85000, class: "First Class" },
+{ id: 647, airline: "Air India", from: "New Delhi", to: "Bangkok", price: 82000, class: "First Class" },
+
+{ id: 648, airline: "Malaysia Airlines", from: "New Delhi", to: "Kuala Lumpur", price: 95000, class: "First Class" },
+{ id: 649, airline: "Air India", from: "New Delhi", to: "Kuala Lumpur", price: 93000, class: "First Class" },
+
+{ id: 650, airline: "Qatar Airways", from: "New Delhi", to: "Doha", price: 78000, class: "First Class" },
+{ id: 651, airline: "Air India", from: "New Delhi", to: "Doha", price: 76000, class: "First Class" },
+    // ECONOMY
+{ id: 701, airline: "Air India", from: "New Delhi", to: "Toronto", price: 62000, class: "Economy" },
+{ id: 702, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 64000, class: "Economy" },
+{ id: 703, airline: "British Airways", from: "New Delhi", to: "London", price: 43000, class: "Economy" },
+{ id: 704, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 44500, class: "Economy" },
+{ id: 705, airline: "Air India", from: "New Delhi", to: "New York", price: 68000, class: "Economy" },
+{ id: 706, airline: "Emirates", from: "New Delhi", to: "New York", price: 70000, class: "Economy" },
+{ id: 707, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 52000, class: "Economy" },
+{ id: 708, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 54000, class: "Economy" },
+{ id: 709, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 3500, class: "Economy" },
+{ id: 710, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 3300, class: "Economy" },
+{ id: 711, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 45000, class: "Economy" },
+{ id: 712, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 44000, class: "Economy" },
+{ id: 713, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 65000, class: "Economy" },
+{ id: 714, airline: "Air India", from: "New Delhi", to: "Sydney", price: 63000, class: "Economy" },
+
+// PREMIUM ECONOMY
+{ id: 715, airline: "Air India", from: "New Delhi", to: "Toronto", price: 76000, class: "Premium Economy" },
+{ id: 716, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 78000, class: "Premium Economy" },
+{ id: 717, airline: "British Airways", from: "New Delhi", to: "London", price: 56000, class: "Premium Economy" },
+{ id: 718, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 57500, class: "Premium Economy" },
+{ id: 719, airline: "Air India", from: "New Delhi", to: "New York", price: 82000, class: "Premium Economy" },
+{ id: 720, airline: "Emirates", from: "New Delhi", to: "New York", price: 84000, class: "Premium Economy" },
+{ id: 721, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 64000, class: "Premium Economy" },
+{ id: 722, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 66000, class: "Premium Economy" },
+{ id: 723, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 4800, class: "Premium Economy" },
+{ id: 724, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 4600, class: "Premium Economy" },
+{ id: 725, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 58000, class: "Premium Economy" },
+{ id: 726, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 57000, class: "Premium Economy" },
+{ id: 727, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 78000, class: "Premium Economy" },
+{ id: 728, airline: "Air India", from: "New Delhi", to: "Sydney", price: 76000, class: "Premium Economy" },
+
+// BUSINESS
+{ id: 729, airline: "Air India", from: "New Delhi", to: "Toronto", price: 105000, class: "Business" },
+{ id: 730, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 108000, class: "Business" },
+{ id: 731, airline: "British Airways", from: "New Delhi", to: "London", price: 90000, class: "Business" },
+{ id: 732, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 92000, class: "Business" },
+{ id: 733, airline: "Air India", from: "New Delhi", to: "New York", price: 115000, class: "Business" },
+{ id: 734, airline: "Emirates", from: "New Delhi", to: "New York", price: 120000, class: "Business" },
+{ id: 735, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 95000, class: "Business" },
+{ id: 736, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 98000, class: "Business" },
+{ id: 737, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 7800, class: "Business" },
+{ id: 738, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 7500, class: "Business" },
+{ id: 739, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 89000, class: "Business" },
+{ id: 740, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 88000, class: "Business" },
+{ id: 741, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 118000, class: "Business" },
+{ id: 742, airline: "Air India", from: "New Delhi", to: "Sydney", price: 114000, class: "Business" },
+
+// FIRST CLASS
+{ id: 743, airline: "Air India", from: "New Delhi", to: "Toronto", price: 155000, class: "First Class" },
+{ id: 744, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 160000, class: "First Class" },
+{ id: 745, airline: "British Airways", from: "New Delhi", to: "London", price: 148000, class: "First Class" },
+{ id: 746, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 150000, class: "First Class" },
+{ id: 747, airline: "Air India", from: "New Delhi", to: "New York", price: 185000, class: "First Class" },
+{ id: 748, airline: "Emirates", from: "New Delhi", to: "New York", price: 190000, class: "First Class" },
+{ id: 749, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 175000, class: "First Class" },
+{ id: 750, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 180000, class: "First Class" },
+{ id: 751, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 11500, class: "First Class" },
+{ id: 752, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 11000, class: "First Class" },
+{ id: 753, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 145000, class: "First Class" },
+{ id: 754, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 142000, class: "First Class" },
+{ id: 755, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 195000, class: "First Class" },
+{ id: 756, airline: "Air India", from: "New Delhi", to: "Sydney", price: 190000, class: "First Class" },
+
+// A few more from other origins to those cities
+{ id: 757, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 65000, class: "Economy" },
+{ id: 758, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 79000, class: "Premium Economy" },
+{ id: 759, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 110000, class: "Business" },
+{ id: 760, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 160000, class: "First Class" },
+
+{ id: 761, airline: "British Airways", from: "Mumbai", to: "London", price: 60000, class: "Economy" },
+{ id: 762, airline: "British Airways", from: "Mumbai", to: "London", price: 78000, class: "Premium Economy" },
+{ id: 763, airline: "British Airways", from: "Mumbai", to: "London", price: 118000, class: "Business" },
+{ id: 764, airline: "British Airways", from: "Mumbai", to: "London", price: 155000, class: "First Class" },
+
+{ id: 765, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 68000, class: "Economy" },
+{ id: 766, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 82000, class: "Premium Economy" },
+{ id: 767, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 120000, class: "Business" },
+{ id: 768, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 190000, class: "First Class" },
+
+{ id: 769, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 54000, class: "Economy" },
+{ id: 770, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 66000, class: "Premium Economy" },
+{ id: 771, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 98000, class: "Business" },
+{ id: 772, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 178000, class: "First Class" },
+    // ECONOMY
+{ id: 801, airline: "Air India", from: "New Delhi", to: "Toronto", price: 61000, class: "Economy" },
+{ id: 802, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 63000, class: "Economy" },
+{ id: 803, airline: "Lufthansa", from: "New Delhi", to: "Toronto", price: 65000, class: "Economy" },
+
+{ id: 804, airline: "British Airways", from: "New Delhi", to: "London", price: 42000, class: "Economy" },
+{ id: 805, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 43500, class: "Economy" },
+{ id: 806, airline: "Air India", from: "New Delhi", to: "London", price: 44000, class: "Economy" },
+
+{ id: 807, airline: "Air India", from: "New Delhi", to: "New York", price: 67000, class: "Economy" },
+{ id: 808, airline: "Emirates", from: "New Delhi", to: "New York", price: 69000, class: "Economy" },
+{ id: 809, airline: "Lufthansa", from: "New Delhi", to: "New York", price: 71000, class: "Economy" },
+
+{ id: 810, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 51000, class: "Economy" },
+{ id: 811, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 53000, class: "Economy" },
+{ id: 812, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 55000, class: "Economy" },
+
+{ id: 813, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 3400, class: "Economy" },
+{ id: 814, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 3200, class: "Economy" },
+{ id: 815, airline: "SpiceJet", from: "Amritsar", to: "New Delhi", price: 3300, class: "Economy" },
+
+{ id: 816, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 44000, class: "Economy" },
+{ id: 817, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 43000, class: "Economy" },
+{ id: 818, airline: "Air France", from: "New Delhi", to: "Brussels", price: 45000, class: "Economy" },
+
+{ id: 819, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 64000, class: "Economy" },
+{ id: 820, airline: "Air India", from: "New Delhi", to: "Sydney", price: 62000, class: "Economy" },
+{ id: 821, airline: "Singapore Airlines", from: "New Delhi", to: "Sydney", price: 66000, class: "Economy" },
+
+// PREMIUM ECONOMY
+{ id: 822, airline: "Air India", from: "New Delhi", to: "Toronto", price: 75000, class: "Premium Economy" },
+{ id: 823, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 77000, class: "Premium Economy" },
+{ id: 824, airline: "Lufthansa", from: "New Delhi", to: "Toronto", price: 79000, class: "Premium Economy" },
+
+{ id: 825, airline: "British Airways", from: "New Delhi", to: "London", price: 55000, class: "Premium Economy" },
+{ id: 826, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 56500, class: "Premium Economy" },
+{ id: 827, airline: "Air India", from: "New Delhi", to: "London", price: 57000, class: "Premium Economy" },
+
+{ id: 828, airline: "Air India", from: "New Delhi", to: "New York", price: 81000, class: "Premium Economy" },
+{ id: 829, airline: "Emirates", from: "New Delhi", to: "New York", price: 83000, class: "Premium Economy" },
+{ id: 830, airline: "Lufthansa", from: "New Delhi", to: "New York", price: 85000, class: "Premium Economy" },
+
+{ id: 831, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 63000, class: "Premium Economy" },
+{ id: 832, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 65000, class: "Premium Economy" },
+{ id: 833, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 67000, class: "Premium Economy" },
+
+{ id: 834, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 4700, class: "Premium Economy" },
+{ id: 835, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 4500, class: "Premium Economy" },
+{ id: 836, airline: "Vistara", from: "Amritsar", to: "New Delhi", price: 4800, class: "Premium Economy" },
+
+{ id: 837, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 57000, class: "Premium Economy" },
+{ id: 838, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 56000, class: "Premium Economy" },
+{ id: 839, airline: "Air France", from: "New Delhi", to: "Brussels", price: 58000, class: "Premium Economy" },
+
+{ id: 840, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 77000, class: "Premium Economy" },
+{ id: 841, airline: "Air India", from: "New Delhi", to: "Sydney", price: 75000, class: "Premium Economy" },
+{ id: 842, airline: "Singapore Airlines", from: "New Delhi", to: "Sydney", price: 79000, class: "Premium Economy" },
+
+// BUSINESS
+{ id: 843, airline: "Air India", from: "New Delhi", to: "Toronto", price: 103000, class: "Business" },
+{ id: 844, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 106000, class: "Business" },
+{ id: 845, airline: "Lufthansa", from: "New Delhi", to: "Toronto", price: 109000, class: "Business" },
+
+{ id: 846, airline: "British Airways", from: "New Delhi", to: "London", price: 88000, class: "Business" },
+{ id: 847, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 90000, class: "Business" },
+{ id: 848, airline: "Air India", from: "New Delhi", to: "London", price: 92000, class: "Business" },
+
+{ id: 849, airline: "Air India", from: "New Delhi", to: "New York", price: 112000, class: "Business" },
+{ id: 850, airline: "Emirates", from: "New Delhi", to: "New York", price: 118000, class: "Business" },
+{ id: 851, airline: "Lufthansa", from: "New Delhi", to: "New York", price: 122000, class: "Business" },
+
+{ id: 852, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 93000, class: "Business" },
+{ id: 853, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 96000, class: "Business" },
+{ id: 854, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 99000, class: "Business" },
+
+{ id: 855, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 7600, class: "Business" },
+{ id: 856, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 7300, class: "Business" },
+{ id: 857, airline: "Vistara", from: "Amritsar", to: "New Delhi", price: 7800, class: "Business" },
+
+{ id: 858, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 87000, class: "Business" },
+{ id: 859, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 86000, class: "Business" },
+{ id: 860, airline: "Air France", from: "New Delhi", to: "Brussels", price: 89000, class: "Business" },
+
+{ id: 861, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 115000, class: "Business" },
+{ id: 862, airline: "Air India", from: "New Delhi", to: "Sydney", price: 112000, class: "Business" },
+{ id: 863, airline: "Singapore Airlines", from: "New Delhi", to: "Sydney", price: 118000, class: "Business" },
+
+// FIRST CLASS
+{ id: 864, airline: "Air India", from: "New Delhi", to: "Toronto", price: 152000, class: "First Class" },
+{ id: 865, airline: "Air Canada", from: "New Delhi", to: "Toronto", price: 158000, class: "First Class" },
+{ id: 866, airline: "Lufthansa", from: "New Delhi", to: "Toronto", price: 162000, class: "First Class" },
+
+{ id: 867, airline: "British Airways", from: "New Delhi", to: "London", price: 146000, class: "First Class" },
+{ id: 868, airline: "Virgin Atlantic", from: "New Delhi", to: "London", price: 149000, class: "First Class" },
+{ id: 869, airline: "Air India", from: "New Delhi", to: "London", price: 152000, class: "First Class" },
+
+{ id: 870, airline: "Air India", from: "New Delhi", to: "New York", price: 180000, class: "First Class" },
+{ id: 871, airline: "Emirates", from: "New Delhi", to: "New York", price: 188000, class: "First Class" },
+{ id: 872, airline: "Lufthansa", from: "New Delhi", to: "New York", price: 195000, class: "First Class" },
+
+{ id: 873, airline: "Air India", from: "New Delhi", to: "Tokyo", price: 170000, class: "First Class" },
+{ id: 874, airline: "Japan Airlines", from: "New Delhi", to: "Tokyo", price: 176000, class: "First Class" },
+{ id: 875, airline: "Singapore Airlines", from: "New Delhi", to: "Tokyo", price: 182000, class: "First Class" },
+
+{ id: 876, airline: "Air India", from: "Amritsar", to: "New Delhi", price: 11200, class: "First Class" },
+{ id: 877, airline: "IndiGo", from: "Amritsar", to: "New Delhi", price: 10800, class: "First Class" },
+{ id: 878, airline: "Vistara", from: "Amritsar", to: "New Delhi", price: 11500, class: "First Class" },
+
+{ id: 879, airline: "Brussels Airlines", from: "New Delhi", to: "Brussels", price: 140000, class: "First Class" },
+{ id: 880, airline: "Lufthansa", from: "New Delhi", to: "Brussels", price: 138000, class: "First Class" },
+{ id: 881, airline: "Air France", from: "New Delhi", to: "Brussels", price: 143000, class: "First Class" },
+
+{ id: 882, airline: "Qantas", from: "New Delhi", to: "Sydney", price: 188000, class: "First Class" },
+{ id: 883, airline: "Air India", from: "New Delhi", to: "Sydney", price: 185000, class: "First Class" },
+{ id: 884, airline: "Singapore Airlines", from: "New Delhi", to: "Sydney", price: 192000, class: "First Class" },
+
+// From other Indian cities to these international destinations (all classes)
+
+// Mumbai to Toronto, London, New York, Tokyo, Brussels, Sydney
+{ id: 885, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 64000, class: "Economy" },
+{ id: 886, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 78000, class: "Premium Economy" },
+{ id: 887, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 108000, class: "Business" },
+{ id: 888, airline: "Air Canada", from: "Mumbai", to: "Toronto", price: 158000, class: "First Class" },
+
+{ id: 889, airline: "British Airways", from: "Mumbai", to: "London", price: 45000, class: "Economy" },
+{ id: 890, airline: "British Airways", from: "Mumbai", to: "London", price: 58000, class: "Premium Economy" },
+{ id: 891, airline: "British Airways", from: "Mumbai", to: "London", price: 92000, class: "Business" },
+{ id: 892, airline: "British Airways", from: "Mumbai", to: "London", price: 150000, class: "First Class" },
+
+{ id: 893, airline: "Emirates", from: "Mumbai", to: "New York", price: 72000, class: "Economy" },
+{ id: 894, airline: "Emirates", from: "Mumbai", to: "New York", price: 86000, class: "Premium Economy" },
+{ id: 895, airline: "Emirates", from: "Mumbai", to: "New York", price: 122000, class: "Business" },
+{ id: 896, airline: "Emirates", from: "Mumbai", to: "New York", price: 190000, class: "First Class" },
+
+{ id: 897, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 55000, class: "Economy" },
+{ id: 898, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 68000, class: "Premium Economy" },
+{ id: 899, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 98000, class: "Business" },
+{ id: 900, airline: "Japan Airlines", from: "Mumbai", to: "Tokyo", price: 178000, class: "First Class" },
+
+{ id: 901, airline: "Lufthansa", from: "Mumbai", to: "Brussels", price: 46000, class: "Economy" },
+{ id: 902, airline: "Lufthansa", from: "Mumbai", to: "Brussels", price: 59000, class: "Premium Economy" },
+{ id: 903, airline: "Lufthansa", from: "Mumbai", to: "Brussels", price: 89000, class: "Business" },
+{ id: 904, airline: "Lufthansa", from: "Mumbai", to: "Brussels", price: 145000, class: "First Class" },
+
+{ id: 905, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 67000, class: "Economy" },
+{ id: 906, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 80000, class: "Premium Economy" },
+{ id: 907, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 118000, class: "Business" },
+{ id: 908, airline: "Qantas", from: "Mumbai", to: "Sydney", price: 188000, class: "First Class" },
+
+// Bangalore to London, New York, Tokyo, Sydney
+{ id: 909, airline: "British Airways", from: "Bangalore", to: "London", price: 48000, class: "Economy" },
+{ id: 910, airline: "British Airways", from: "Bangalore", to: "London", price: 60000, class: "Premium Economy" },
+{ id: 911, airline: "British Airways", from: "Bangalore", to: "London", price: 95000, class: "Business" },
+{ id: 912, airline: "British Airways", from: "Bangalore", to: "London", price: 152000, class: "First Class" },
+
+{ id: 913, airline: "Emirates", from: "Bangalore", to: "New York", price: 74000, class: "Economy" },
+{ id: 914, airline: "Emirates", from: "Bangalore", to: "New York", price: 88000, class: "Premium Economy" },
+{ id: 915, airline: "Emirates", from: "Bangalore", to: "New York", price: 125000, class: "Business" },
+{ id: 916, airline: "Emirates", from: "Bangalore", to: "New York", price: 192000, class: "First Class" },
+
+{ id: 917, airline: "Singapore Airlines", from: "Bangalore", to: "Tokyo", price: 58000, class: "Economy" },
+{ id: 918, airline: "Singapore Airlines", from: "Bangalore", to: "Tokyo", price: 70000, class: "Premium Economy" },
+{ id: 919, airline: "Singapore Airlines", from: "Bangalore", to: "Tokyo", price: 100000, class: "Business" },
+{ id: 920, airline: "Singapore Airlines", from: "Bangalore", to: "Tokyo", price: 180000, class: "First Class" },
+
+{ id: 921, airline: "Qantas", from: "Bangalore", to: "Sydney", price: 69000, class: "Economy" },
+{ id: 922, airline: "Qantas", from: "Bangalore", to: "Sydney", price: 82000, class: "Premium Economy" },
+{ id: 923, airline: "Qantas", from: "Bangalore", to: "Sydney", price: 120000, class: "Business" },
+{ id: 924, airline: "Qantas", from: "Bangalore", to: "Sydney", price: 190000, class: "First Class" },
+
+// Kolkata to London, Toronto, Sydney
+{ id: 925, airline: "British Airways", from: "Kolkata", to: "London", price: 46000, class: "Economy" },
+{ id: 926, airline: "British Airways", from: "Kolkata", to: "London", price: 59000, class: "Premium Economy" },
+{ id: 927, airline: "British Airways", from: "Kolkata", to: "London", price: 93000, class: "Business" },
+{ id: 928, airline: "British Airways", from: "Kolkata", to: "London", price: 151000, class: "First Class" },
+
+{ id: 929, airline: "Air Canada", from: "Kolkata", to: "Toronto", price: 66000, class: "Economy" },
+{ id: 930, airline: "Air Canada", from: "Kolkata", to: "Toronto", price: 80000, class: "Premium Economy" },
+{ id: 931, airline: "Air Canada", from: "Kolkata", to: "Toronto", price: 110000, class: "Business" },
+{ id: 932, airline: "Air Canada", from: "Kolkata", to: "Toronto", price: 160000, class: "First Class" },
+
+{ id: 933, airline: "Qantas", from: "Kolkata", to: "Sydney", price: 70000, class: "Economy" },
+{ id: 934, airline: "Qantas", from: "Kolkata", to: "Sydney", price: 83000, class: "Premium Economy" },
+{ id: 935, airline: "Qantas", from: "Kolkata", to: "Sydney", price: 122000, class: "Business" },
+{ id: 936, airline: "Qantas", from: "Kolkata", to: "Sydney", price: 192000, class: "First Class" }
 ];
 
 
