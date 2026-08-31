@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AeroBook | Booking</title>
-    <link rel="stylesheet" href="booking.css">
-    <script src="booking.js" defer></script>
+    <link rel="stylesheet" href="index.css"> <!-- Keeping your main styles -->
+    <link rel="stylesheet" href="booking.css"> <!-- Specific booking styles -->
+    <script src="booking.js" defer></script> <!-- The script to load flight data -->
+
+    <title>AeroBook | Secure Booking</title>
 </head>
+
 <body>
 
     <header>
@@ -18,104 +22,198 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="flight.html">Flights</a></li>
+                <li><a href="booking.html">Bookings</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="booking-page">
-        <section class="booking-card">
-            <h2>Passenger Details</h2>
-            <p class="subtitle">Fill in your details carefully to confirm your ticket.</p>
+    <main class="booking-main">
+        <div class="booking-container">
 
-            <form class="booking-form" id="bookingForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" placeholder="Enter your full name" required>
+            <!-- LEFT COLUMN: Details & Payment -->
+            <div class="booking-left">
+
+                <!-- 1. Dynamic Flight Summary -->
+                <section class="booking-card">
+                    <div class="card-header">
+                        <h2>Selected Flight Summary</h2>
                     </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
+                    <div class="card-body flight-summary">
+                        <div class="airline-logo">
+                            <h3 id="summary-airline">Loading Airline...</h3>
+                        </div>
+                        <div class="flight-details">
+                            <h4 id="summary-route">Loading Route...</h4>
+                            <p id="summary-date">30 July 2026</p>
+                            <p class="flight-tier" id="summary-class">Loading Class...</p>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Mobile Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <!-- 2. Passenger Details -->
+                <section class="booking-card">
+                    <div class="card-header">
+                        <h2>Passenger Details</h2>
                     </div>
+                    <div class="card-body">
+                        <h3>Contact Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" placeholder="+91 88888 88888" required>
+                            </div>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="passengers">Passengers</label>
-                        <select id="passengers" required>
-                            <option>1 Passenger</option>
-                            <option>2 Passengers</option>
-                            <option>3 Passengers</option>
-                            <option>4 Passengers</option>
-                            <option>5 Passengers</option>
-                        </select>
+                        <hr class="divider">
+
+                        <h3>Passenger 1 (Adult)</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date of Birth</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender</label>
+                                <select required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Passport Info (Optional for Domestic)</label>
+                            <input type="text" placeholder="Passport Number">
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <h2>Flight Details</h2>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="from">From</label>
-                        <input type="text" id="from" placeholder="Departure city" required>
+                <!-- 3. Secure Payment -->
+                <section class="booking-card">
+                    <div class="card-header">
+                        <h2>Secure Payment</h2>
                     </div>
+                    <div class="card-body">
+                        <div class="payment-tabs">
+                            <label><input type="radio" name="payment" checked> Credit/Debit Card</label>
+                            <label><input type="radio" name="payment"> UPI</label>
+                            <label><input type="radio" name="payment"> Net Banking</label>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="to">To</label>
-                        <input type="text" id="to" placeholder="Destination city" required>
+                        <div class="form-group">
+                            <label>Card Number</label>
+                            <div class="card-input-wrapper">
+                                <i class="fa-regular fa-credit-card"></i>
+                                <input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV</label>
+                                <input type="password" placeholder="***" required>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="depart-date">Departure Date</label>
-                        <input type="date" id="depart-date" required>
+            </div>
+
+            <!-- RIGHT COLUMN: Summary & Pricing -->
+            <div class="booking-right">
+
+                <!-- Dynamic Fare Summary -->
+                <section class="booking-card sidebar-card">
+                    <div class="card-header">
+                        <h2>Fare Summary</h2>
                     </div>
+                    <div class="card-body">
+                        <div class="fare-row">
+                            <span>Base Fare</span>
+                            <span id="summary-base-fare">₹0</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>Taxes</span>
+                            <span>₹150</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>Surcharges</span>
+                            <span>₹249</span>
+                        </div>
+                        <div class="fare-row">
+                            <span>Convenience Fee</span>
+                            <span>₹0</span>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="return-date">Return Date</label>
-                        <input type="date" id="return-date">
+                        <hr class="divider">
+
+                        <div class="promo-section">
+                            <label>Promo Code</label>
+                            <div class="promo-input">
+                                <input type="text" value="ABNCF" placeholder="Enter Code">
+                                <button type="button">Apply</button>
+                            </div>
+                            <small class="promo-success">**ABNCF Applied! No Convenience Fee</small>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="fare-row total-fare">
+                            <span>Total Fare:</span>
+                            <span id="summary-total-fare">₹0</span>
+                        </div>
+
+                        <button class="btn-primary" onclick="window.location.href='confirmation.html'">Pay Now and
+                            Book</button>
                     </div>
-                </div>
+                </section>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="class">Class</label>
-                        <select id="class" required>
-                            <option>Economy</option>
-                            <option>Premium Economy</option>
-                            <option>Business</option>
-                            <option>First Class</option>
-                        </select>
+                <!-- Travel Insurance -->
+                <section class="booking-card sidebar-card insurance-card">
+                    <div class="insurance-header">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h3>Add Travel Insurance</h3>
+                        <input type="checkbox" id="insurance">
                     </div>
+                    <p>Secure your trip for just ₹249 per person. Covers trip cancellation, medical emergencies, and
+                        lost baggage.</p>
+                </section>
 
-                    <div class="form-group">
-                        <label for="baggage">Baggage</label>
-                        <select id="baggage" required>
-                            <option>Carry-on only</option>
-                            <option>1 Checked Bag</option>
-                            <option>2 Checked Bags</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group full-width">
-                    <label for="notes">Special Requests</label>
-                    <textarea id="notes" rows="4" placeholder="Seat preference, meal request, or any other note"></textarea>
-                </div>
-
-                <button type="submit" class="book-btn">Confirm Flight</button>
-            </form>
-        </section>
+            </div>
+        </div>
     </main>
 
+    <footer>
+        <div class="footer-content">
+            <h2>AeroBook</h2>
+            <p>Your trusted partner for easy and affordable flight booking.</p>
+            <p class="copyright">© 2026 AeroBook. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
