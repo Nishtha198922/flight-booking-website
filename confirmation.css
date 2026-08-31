@@ -1,95 +1,119 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #e8f5ff; /* Basic flat color */
-    color: #1a1a1a;
-}
-
-.topbar {
+.navbar {
     background-color: #072041;
-    color: white;
-    text-align: center;
-    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
 }
 
-.topbar h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.topbar p {
-    font-size: 16px;
-    color: #d6e8ff;
+.logo h2 {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #acd5f3;
 }
 
-.confirm-page {
-    width: 90%;
-    max-width: 850px;
-    margin: 50px auto;
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-.confirm-card {
-    background: white;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px #d3d3d3; /* Basic solid shadow */
-    text-align: center;
+.nav-links li {
+    margin: 0 15px;
 }
 
-.confirm-card h2 {
-    color: #0a5ca8;
-    margin-bottom: 10px;
-}
-
-.success-text {
-    color: #2e7d32;
-    margin-bottom: 25px;
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
     font-size: 18px;
 }
 
-.ticket-box {
-    text-align: left;
-    background-color: #eef6ff;
-    border-left: 5px solid #0077cc;
+.nav-links a:hover {
+    color: #0077cc;
+}
+
+
+
+
+
+.success-page {
+    background-color: #f3f8fc;
+    font-family: Arial, sans-serif;
+}
+
+.success-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border-top: 6px solid #28a745;
+}
+
+.success-icon {
+    font-size: 60px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.success-container h1 {
+    color: #002346;
+    margin-bottom: 10px;
+}
+
+.pnr-box {
+    background: #eef6fb;
     padding: 20px;
-    border-radius: 10px;
-    line-height: 2;
-    margin-bottom: 25px;
-}
-
-.home-btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #0077cc;
-    color: white;
-    padding: 12px 22px;
     border-radius: 8px;
+    margin: 25px 0;
+    border: 1px dashed #0077cc;
 }
 
-.home-btn:hover {
-    background-color: #005fa3;
+.pnr-box p {
+    margin: 0 0 5px 0;
+    color: #555;
+    font-size: 14px;
 }
 
+.pnr-box h2 {
+    margin: 0;
+    color: #0077cc;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
 
-/* --- MOBILE SETTINGS --- */
-@media (max-width: 768px) {
-    .booking-page {
-        width: 95%;
-        margin: 20px auto;
-    }
-    .booking-card {
-        padding: 20px;
-    }
-    .form-row {
-        flex-direction: column; 
-        gap: 0;
-    }
-    .form-group {
-        margin-bottom: 15px; 
-    }
+.email-notice {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-download {
+    background: #002346;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-home {
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
 }
