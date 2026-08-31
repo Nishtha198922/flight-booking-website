@@ -22,7 +22,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="flights.html">Flights</a></li>
+                <li><a href="flight.html">Flights</a></li>
                 <li><a href="booking.html">Bookings</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
@@ -40,42 +40,22 @@
     <section class="search-summary">
         <div class="summary-box">
             <p><strong>From:</strong> New Delhi</p>
-            <p><strong>To:</strong> Mumbai</p>
-            <p><strong>Departure:</strong> 30 July 2026</p>
-            <p><strong>Return:</strong> 5 August 2026</p>
+            <p><strong>To:</strong> Everywhere</p>
             <p><strong>Passengers:</strong> 1 Adult</p>
             <p><strong>Class:</strong> Economy</p>
         </div>
     </section>
 
+
+
+
+
+
     <section class="flight-page">
-        <aside class="filters">
-            <h2>Filters</h2>
-
-            <div class="filter-group">
-                <label>Price Range</label>
-                <input type="range" min="2000" max="50000" value="50000" id="priceRange">
-                <span id="priceValue">50000</span>
-            </div>
-
-            <div class="filter-group">
-                <label>Airline</label>
-                <!-- Added id="airlineFilter" here -->
-                <select id="airlineFilter">
-                    <option value="All">All Airlines</option>
-                    <option value="Air India">Air India</option>
-                    <option value="IndiGo">IndiGo</option>
-                    <option value="Vistara">Vistara</option>
-                    <option value="SpiceJet">SpiceJet</option>
-                    <option value="Go First">Go First</option>
-                    <option value="AirAsia">AirAsia</option>
-                </select>
-            </div>
-
-            <button class="apply-btn" id="applyFilterBtn">Apply Filters</button>
-        </aside>
 
         <div class="results">
+
+
             <div class="results-top">
                 <h2>Available Flights</h2>
             </div>
@@ -85,14 +65,19 @@
                     <h3>IndiGo</h3>
                     <p>06:30 AM - 08:10 AM</p>
                     <p>Non-stop • 1h 40m</p>
-                    <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p>New Delhi (DEL) → Goa</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹4,899</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
+
+
+
+
 
             <div class="flight-card">
                 <div class="flight-info">
@@ -100,11 +85,12 @@
                     <p>09:15 AM - 11:05 AM</p>
                     <p>Non-stop • 1h 50m</p>
                     <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹5,250</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
 
@@ -113,12 +99,13 @@
                     <h3>Vistara</h3>
                     <p>01:40 PM - 03:25 PM</p>
                     <p>Non-stop • 1h 45m</p>
-                    <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p>New Delhi (DEL) → Dubai</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹5,999</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
 
@@ -127,12 +114,13 @@
                     <h3>SpiceJet</h3>
                     <p>08:20 PM - 10:15 PM</p>
                     <p>1 Stop • 1h 55m</p>
-                    <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p>New Delhi (DEL) → Hyderabad</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹4,120</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
 
@@ -144,12 +132,28 @@
                     <h3>Go First</h3>
                     <p>10:00 AM - 12:15 PM</p>
                     <p>Non-stop • 2h 15m</p>
-                    <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p>New Delhi (DEL) → Mumbai</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹4,500</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
+                </div>
+            </div>
+
+            <div class="flight-card hidden-flight">
+                <div class="flight-info">
+                    <h3>Singapore Airlines</h3>
+                    <p>10:00 AM - 12:15 PM</p>
+                    <p>Non-stop • 2h 15m</p>
+                    <p>New Delhi (DEL) → Singapore</p>
+                    <p class="flight-tier">Economy</p>
+                </div>
+                <div class="flight-price">
+                    <h3>₹4,500</h3>
+                    <p>Per person</p>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
 
@@ -158,12 +162,13 @@
                     <h3>AirAsia</h3>
                     <p>11:30 PM - 01:45 AM</p>
                     <p>1 Stop • 2h 15m</p>
-                    <p>New Delhi (DEL) → Mumbai (BOM)</p>
+                    <p>New Delhi (DEL) → Landon</p>
+                    <p class="flight-tier">Economy</p>
                 </div>
                 <div class="flight-price">
                     <h3>₹3,999</h3>
                     <p>Per person</p>
-                    <button>Book Now</button>
+                    <button onclick="window.location.href='booking.html'">Book Now</button>
                 </div>
             </div>
 
@@ -172,6 +177,17 @@
                 <button id="loadMoreBtn">Load More Flights</button>
             </div>
 
+
+
+        </div>
+
+
+        <div class="images-sidebar">
+            <h2>Today's Flight Offers</h2>
+            <img src="offer.png" alt="offer">
+            <img src="offer01.webp" alt="offer01">
+            <img src="offer03.webp" alt="offer03">
+            <img src="offer02.webp" alt="offer02">
         </div>
     </section>
 
