@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AeroBook | Confirmation</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="confirmation.css">
     <script src="confirmation.js" defer></script>
+    <title>AeroBook | Booking Confirmed</title>
 </head>
-<body>
 
-    <header class="topbar">
-        <h1>AeroBook</h1>
-        <p>Your flight has been confirmed</p>
+<body class="success-page">
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-plane"></i>
+                <h2>AeroBook</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flight.html">Flights</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="confirm-page">
-        <section class="confirm-card">
-            <h2>Booking Confirmed</h2>
-            <p class="success-text">Your flight booking has been successfully completed.</p>
 
-            <div class="ticket-box">
-                <p><strong>Passenger Name:</strong> <span id="c-name"></span></p>
-                <p><strong>Email:</strong> <span id="c-email"></span></p>
-                <p><strong>Phone:</strong> <span id="c-phone"></span></p>
-                <p><strong>From:</strong> <span id="c-from"></span></p>
-                <p><strong>To:</strong> <span id="c-to"></span></p>
-                <p><strong>Departure Date:</strong> <span id="c-date"></span></p>
-                <p><strong>Return Date:</strong> <span id="c-return"></span></p>
-                <p><strong>Passengers:</strong> <span id="c-passengers"></span></p>
-                <p><strong>Class:</strong> <span id="c-class"></span></p>
-                <p><strong>Baggage:</strong> <span id="c-baggage"></span></p>
-                <p><strong>Booking ID:</strong> <span id="c-id"></span></p>
-            </div>
+    <main class="success-container">
+        <i class="fa-solid fa-circle-check success-icon"></i>
+        <h1>Booking Confirmed!</h1>
+        <p>Your flight from <strong id="success-from">New Delhi</strong> to <strong id="success-to">Mumbai</strong> is
+            successfully booked.</p>
 
-            <a href="index.html" class="home-btn">Back to Home</a>
-        </section>
+        <div class="pnr-box">
+            <p>Booking Reference (PNR)</p>
+            <h2 id="pnr-number">LOADING...</h2>
+        </div>
+
+        <p class="email-notice">We have sent the e-ticket to your email address.</p>
+
+        <div class="success-actions">
+            <button class="btn-download" onclick="window.print()">Download E-Ticket</button>
+            <a href="index.html" class="btn-home">Return to Home</a>
+        </div>
     </main>
 
 </body>
+
 </html>
