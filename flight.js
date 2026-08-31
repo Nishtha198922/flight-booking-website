@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // 1. Get the values the user selected
             const selectedAirline = document.getElementById('airlineFilter').value;
             const maxPrice = parseInt(document.getElementById('priceRange').value, 10);
+            const selectedclass = document.getElementById('class').value;
 
             // 2. Find all flight cards on the page
             const flightCards = document.querySelectorAll('.flight-card');
@@ -49,10 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Get the airline name from the <h3> inside this specific card
                 const airlineName = card.querySelector('.flight-info h3').textContent.trim();
+                const airlineClass = card.querySelector('.flight-tier').textContent.trim();
 
                 // Get the price text (e.g., "₹4,899"), remove the '₹' and commas, and turn it into a number
                 const priceText = card.querySelector('.flight-price h3').textContent;
-                
+
                 // Step A: Get the text, like "₹4,899"
                 let cleanPrice = priceText;
 
@@ -68,9 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Check if the card matches our filters
                 const matchesAirline = (selectedAirline === "All" || airlineName === selectedAirline);
                 const matchesPrice = (flightPrice <= maxPrice);
+                const matchClass = (selectedclass === "All" || airlineClass === selectedclass);
 
                 // 4. Show or hide the card based on the match
-                if (matchesAirline && matchesPrice) {
+                if (matchesAirline && matchesPrice && matchClass) {
                     card.style.display = 'flex';
                 } else {
                     card.style.display = 'none';
@@ -126,7 +129,7 @@ if (flightResults) {
                 "<div class='flight-info'>" +
                 "<h3>" + f.airline + "</h3>" +
                 "<p>" + f.from + " to " + f.to + "</p>" +
-                "<p>Class: " + f.class + "</p>" +
+                "<p class='flight-tier'>" + f.class + "</p>" +
                 "</div>" +
                 "<div class='flight-price'>" +
                 "<h3>₹" + f.price + "</h3>" +
