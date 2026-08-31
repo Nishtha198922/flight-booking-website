@@ -1,49 +1,86 @@
-var bookingForm = document.getElementById("bookingForm");
+// Wait for the webpage to fully load before running the script
+document.addEventListener("DOMContentLoaded", function () {
 
-if (bookingForm) {
-    bookingForm.addEventListener("submit", function (event) {
-        event.preventDefault();
+    // --- 1. GET ROUTE DATA FROM LOCAL STORAGE ---
+    // Read the cities the user searched for. 
+    // If they skipped the search page somehow, default to New Delhi -> Mumbai.
+    let fromCity = localStorage.getItem("searchFrom");
+    let toCity = localStorage.getItem("searchTo");
+    let flightDate = localStorage.getItem("searchDate");
 
-        // Get standard values
-        var name = document.getElementById("fullname").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var from = document.getElementById("from").value;
-        var to = document.getElementById("to").value;
+    if (!fromCity) { fromCity = "New Delhi"; }
+    if (!toCity) { toCity = "Mumbai"; }
+    if (!flightDate) { flightDate = "30 July 2026"; }
 
-        // Basic validation
-        if (name === "" || email === "" || from === "" || to === "") {
-            alert("Please fill all required fields.");
-            return;
-        }
+    // Capitalize the first letters just to make it look neat (e.g., "mumbai" -> "Mumbai")
+    fromCity = fromCity.charAt(0).toUpperCase() + fromCity.slice(1);
+    toCity = toCity.charAt(0).toUpperCase() + toCity.slice(1);
 
-        // Generate a unique ID using the current time in milliseconds
-        var timeStamp = Date.now();
-        var bookingId = "AB" + timeStamp;
+    // --- 2. UPDATE THE HTML SCREEN ---
+    // Inject the route and date into the left-side summary card
+    document.getElementById("summary-route").textContent = fromCity + " ➔ " + toCity;
+    document.getElementById("summary-date").textContent = flightDate;
 
-        // Save standard data
-        localStorage.setItem("bookName", name);
-        localStorage.setItem("bookEmail", email);
-        localStorage.setItem("bookPhone", phone);
-        localStorage.setItem("bookFrom", from);
-        localStorage.setItem("bookTo", to);
-        localStorage.setItem("bookId", bookingId);
+    // (We are setting default text here since Airline/Class weren't saved in the previous steps)
+    document.getElementById("summary-airline").textContent = "IndiGo";
+    document.getElementById("summary-class").textContent = "Economy";
 
-        // Get the rest of the values from the booking form
-        var date = document.getElementById("depart-date").value;
-        var returnDate = document.getElementById("return-date").value;
-        var passengers = document.getElementById("passengers").value;
-        var flightClass = document.getElementById("class").value;
-        var baggage = document.getElementById("baggage").value;
 
-        // Save them to localStorage so confirmation.js can find them
-        localStorage.setItem("bookDate", date);
-        localStorage.setItem("bookReturn", returnDate);
-        localStorage.setItem("bookPassengers", passengers);
-        localStorage.setItem("bookClass", flightClass);
-        localStorage.setItem("bookBaggage", baggage);
+    // --- 3. PRICING & MATH LOGIC ---
+    // Set up our basic costs
+    let baseFare = 4899;
+    let taxes = 150;
+    let surcharges = 249;
+    let convenienceFee = 0; // 0 because the ABNCF promo code is active
+    let insuranceCost = 0;  // Starts at 0 until the user clicks the checkbox
 
-        // Redirect to confirmation
-        window.location.href = "confirmation.html";
-    });
-}
+    const baseFareElement = document.getElementById("summary-base-fare");
+    const totalFareElement = document.getElementById("summary-total-fare");
+    const insuranceCheckbox = document.getElementById("insurance");
+
+    // Display the initial base fare on the screen
+    baseFareElement.textContent = "₹" + baseFare;
+
+    // This function adds up all the numbers and updates the Total Fare at the bottom
+    function updateTotal() {
+        let total = baseFare + taxes + surcharges + convenienceFee + insuranceCost;
+        totalFareElement.textContent = "₹" + total.toLocaleString('en-IN'); // Adds commas like ₹5,298
+    }
+
+    // Run the math once immediately when the page loads
+    updateTotal();
+
+
+    // --- 4. TRAVEL INSURANCE TOGGLE ---
+    // Listen for the user clicking the insurance checkbox
+    if (insuranceCheckbox) {
+        insuranceCheckbox.addEventListener("change", function () {
+
+            if (insuranceCheckbox.checked === true) {
+                insuranceCost = 249; // Add cost if checked
+            } else {
+                insuranceCost = 0;   // Remove cost if unchecked
+            }
+
+            // Recalculate the total every time they click it
+            updateTotal();
+        });
+    }
+
+    // --- 5. PROMO CODE BUTTON (Visual Effect) ---
+    const promoButton = document.querySelector(".promo-input button");
+    const promoSuccessText = document.querySelector(".promo-success");
+
+    // Hide the green success text initially
+    if (promoSuccessText) {
+        promoSuccessText.style.display = "none";
+    }
+
+    // Show the green text when they click "Apply"
+    if (promoButton && promoSuccessText) {
+        promoButton.addEventListener("click", function () {
+            promoSuccessText.style.display = "block";
+            alert("Promo Code ABNCF Applied successfully!");
+        });
+    }
+});
