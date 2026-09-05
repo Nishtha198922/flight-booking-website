@@ -133,11 +133,23 @@ if (flightResults) {
                 "</div>" +
                 "<div class='flight-price'>" +
                 "<h3>₹" + f.price + "</h3>" +
-                "<a href='booking.html'><button>Book Now</button></a>" +
+                "<button onclick=\"selectFlight('" + f.airline + "', " + f.price + ", '" + f.class + "', 'Time TBD')\">Book Now</button>" +
                 "</div>" +
                 "</div>";
 
             flightResults.innerHTML = flightResults.innerHTML + cardHTML;
         }
     }
+}
+
+
+function selectFlight(airline, price, cabinClass, time, from, to) {
+    localStorage.setItem("selectedAirline", airline);
+    localStorage.setItem("selectedPrice", price);
+    localStorage.setItem("selectedClass", cabinClass);
+    localStorage.setItem("selectedTime", time);
+    localStorage.setItem("selectedFrom", from);
+    localStorage.setItem("selectedTo", to);
+    
+    window.location.href = "booking.html";
 }
