@@ -133,7 +133,7 @@ if (flightResults) {
                 "</div>" +
                 "<div class='flight-price'>" +
                 "<h3>₹" + f.price + "</h3>" +
-                "<button onclick=\"selectFlight('" + f.airline + "', " + f.price + ", '" + f.class + "', 'Time TBD')\">Book Now</button>" +
+                "<button onclick=\"selectFlight('" + f.airline + "', " + f.price + ", '" + f.class + "', assignedTime, '" + f.from + "', '" + f.to + "')\">Book Now</button>" +
                 "</div>" +
                 "</div>";
 
@@ -148,8 +148,23 @@ function selectFlight(airline, price, cabinClass, time, from, to) {
     localStorage.setItem("selectedPrice", price);
     localStorage.setItem("selectedClass", cabinClass);
     localStorage.setItem("selectedTime", time);
+
+    // These now correctly capture the 5th and 6th arguments passed from the button
     localStorage.setItem("selectedFrom", from);
     localStorage.setItem("selectedTo", to);
-    
+
     window.location.href = "booking.html";
 }
+
+
+const timeSlots = [
+    "06:30 AM - 08:45 AM",
+    "09:15 AM - 11:30 AM",
+    "01:40 PM - 03:25 PM",
+    "04:00 PM - 06:15 PM",
+    "07:30 PM - 09:40 PM",
+    "11:00 PM - 01:15 AM"
+];
+
+// This forces Flight ID 1 to take Slot 1, ID 2 to take Slot 2, looping infinitely.
+let assignedTime = timeSlots[f.id % timeSlots.length];
