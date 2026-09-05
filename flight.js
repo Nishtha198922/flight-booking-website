@@ -126,10 +126,9 @@ if (flightResults) {
             var f = filteredFlights[j];
 
             var cardHTML = "<div class='flight-card'>" +
-                "<div class='flight-info'>" +
-                "<h3>" + f.airline + "</h3>" +
-                "<p>" + f.from + " to " + f.to + "</p>" +
-                "<p class='flight-tier'>" + f.class + "</p>" +
+                "<div class='flight-price'>" +
+                "<h3>₹" + f.price + "</h3>" +
+                "<button onclick=\"selectFlight('" + f.airline + "', " + f.price + ", '" + f.class + "', 'Time TBD', '" + f.from + "', '" + f.to + "')\">Book Now</button>" +
                 "</div>" +
                 "<div class='flight-price'>" +
                 "<h3>₹" + f.price + "</h3>" +
@@ -148,6 +147,8 @@ function selectFlight(airline, price, cabinClass, time, from, to) {
     localStorage.setItem("selectedPrice", price);
     localStorage.setItem("selectedClass", cabinClass);
     localStorage.setItem("selectedTime", time);
+    
+    // These two lines are critical for dynamic searches
     localStorage.setItem("selectedFrom", from);
     localStorage.setItem("selectedTo", to);
     
