@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="flights.css">
+    <script src="FlightData.js" defer></script>
+    <script src="flight.js" defer></script>
+
+    <title>AeroBook | Flights</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-plane"></i>
+                <h2>AeroBook</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flight.html">Flights</a></li>
+                <li><a href="booking.html">Bookings</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn"> Login </button>
+        </nav>
+    </header>
+
+    <section class="flight-hero">
+        <div class="flight-hero-content">
+            <h1>Search and compare flights</h1>
+            <p>Find the best fare, shortest duration, and most convenient route for your trip.</p>
+        </div>
+    </section>
+
+    <section class="search-summary">
+        <div class="summary-box">
+            <p><strong>From:</strong> <span id="summary-from">-</span></p>
+            <p><strong>To:</strong> <span id="summary-to">-</span></p>
+            <p><strong>Departure:</strong> <span id="summary-date">-</span></p>
+        </div>
+    </section>
+
+    <section class="flight-page">
+        <aside class="filters">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <label>Price Range</label>
+                <input type="range" min="2000" max="50000" value="50000" id="priceRange">
+                <span id="priceValue">50000</span>
+            </div>
+
+            <div class="filter-group">
+                <label>Airline</label>
+                <!-- Added id="airlineFilter" here -->
+                <select id="airlineFilter">
+                    <option value="All">All Airlines</option>
+                    <option value="Air India">Air India</option>
+                    <option value="IndiGo">IndiGo</option>
+                    <option value="Vistara">Vistara</option>
+                    <option value="SpiceJet">SpiceJet</option>
+                    <option value="Go First">Go First</option>
+                    <option value="AirAsia">AirAsia</option>
+                    <option value="British Airways">British Airways</option>
+                    <option value="Emirates">Emirates</option>
+                    <option value="Qatar Airways">Qatar Airways</option>
+                    <option value="Singapore Airlines">Singapore Airlines</option>
+                    <option value="Air France">Air France</option>
+                    <option value="Lufthansa">Lufthansa</option>
+                    <option value="Etihad">Etihad</option>
+                    <option value="Turkish Airlines">Turkish Airlines</option>
+                </select>
+            </div>
+
+
+            <div class="filter-group">
+                <label>Class</label>
+                <select id="class">
+                    <option value="All">All Classes</option>
+                    <option value="Economy">Economy</option>
+                    <option value="Premium Economy">Premium Economy</option>
+                    <option value="Business">Business</option>
+                    <option value="First Class">First Class</option>
+                </select>
+            </div>
+
+
+
+            <button class="apply-btn" id="applyFilterBtn">Apply Filters</button>
+        </aside>
+
+        <div class="results">
+            <div class="results-top">
+                <h2>Available Flights</h2>
+            </div>
+
+            <!-- JavaScript will inject the flight cards into this empty container -->
+            <div id="flightResults"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>AeroBook</h2>
+            <p>Your trusted partner for easy and affordable flight booking.</p>
+            <p class="copyright">© 2026 AeroBook. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
